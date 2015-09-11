@@ -13,3 +13,240 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* mixins and else */
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+￼￼-box-sizing:        border-box;
+}
+
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+#user-profile{
+  width: 100%;
+  height:100%;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /*the magic*/
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.profile-pic:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+/* universal */
+
+html {
+}
+
+section {
+  overflow: auto;
+}
+textarea {
+  resize: vertical;
+}
+.center {
+  text-align: center;
+}
+.center h1 {
+  margin-bottom: 10px;
+}
+.navbar  {
+  color: blue;
+}
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+  } 
+}
+
+.jumbotron {
+  /*height: 560px;*/
+/*  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;*/
+}
+
+#jumbo {
+  /*color: white;*/
+  /*text-shadow: 2px 2px 4px #000000;*/
+  background: rgb(255, 255, 255); /* This is for ie8 and below */
+  background: rgba(#FFF, 0.9); 
+  font-family: 'Dosis', sans-serif;
+}
+
+.code-link {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+h3 {
+  /*text-align: center;*/
+}
+p{
+font-size: 1.1em; line-height: 1.7em;
+}
+
+/* header */
+#header{
+  background: rgb(0, 0, 0); /* This is for ie8 and below */
+  background: rgba(0, 0, 0, 0.8); 
+}
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+#logo:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/*newsletter*/
+/*#newsletter {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}*/
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 2px solid #eaeaea;
+  color: #000;
+}
+footer a {
+  color: #000;
+}
+footer a:hover {
+  color: red;
+  text-decoration: none;
+}
+footer small {
+  float: left;
+}
+footer ul {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+
+/* sidebar */
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+      
+      &:first-child {
+        border: 0;
+        padding-top: 0;
+      }
+      span {
+        display: block;
+        margin-bottom: 3px;
+        line-height: 1;
+      }
+      h1 {
+        font-size: 1.4em;
+        text-align: left;
+        letter-spacing: -1px;
+        margin-bottom: 3px;
+        margin-top: 0px;
+      } 
+  }
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+
+/* forms */
+input, textarea, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+input {
+  height: auto !important;
+}
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}

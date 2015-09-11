@@ -6,22 +6,105 @@
 
 		<%= f.input :tech_name, label: "Tech:", class: 'form-control' %>
 
-		<div> DO YOU HAVE DRAWINGS DURING THIS PRE-TEST?: </div>
-		<%= f.collection_radio_buttons :drawings, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
-		<%= f.input :drawings_des, label: "Explain:", class: 'form-control' %>
+		<div> 
+			DO YOU HAVE DRAWINGS DURING THIS PRE-TEST? 
+			<%= f.collection_radio_buttons :drawings, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :drawings_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
 		
-		<div> Are all signs and frames installed?: </div>
-		<%= f.collection_radio_buttons :signs, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
-		<%= f.input :signs_des, label: "Explain:", class: 'form-control' %>
+		<div> 
+			Are all signs and frames installed? 
+			<%= f.collection_radio_buttons :signs, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :signs_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
 
-		<div> Is Central Station Info on Panel?: </div>
-		<%= f.collection_radio_buttons :central, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
-		<%= f.input :central_des, label: "Explain:", class: 'form-control' %>
+		<div> 
+			Is Central Station Info on Panel? 
+			<%= f.collection_radio_buttons :central, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :central_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
 
-		<div> Is Riser Diagram posted next to panel?: </div>
-		<%= f.collection_radio_buttons :riser, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
-		<%= f.input :riser_des, label: "Explain:", class: 'form-control' %>
-		
+		<div> 
+			Is Riser Diagram posted next to panel? 
+			<%= f.collection_radio_buttons :riser, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :riser_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> Is power wiring okay at: </div>
+
+		<div> 
+			Fused Disconnect Switch? 
+			<%= f.collection_radio_buttons :fds, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :fds_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Fire Alarm Switch? 
+			<%= f.collection_radio_buttons :facp, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :facp_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Ground? 
+			<%= f.collection_radio_buttons :ground, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :ground_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is the panel wiring neatly dressed? 
+			<%= f.collection_radio_buttons :neat, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :neat_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> Check phone lines, battery, each alarm type to central station and fire pump signals. Are they okay? </div>
+
+		<div> Phone line 1 
+			<%= f.collection_radio_buttons :line1, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Phone line 2 
+			<%= f.collection_radio_buttons :line2, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Battery 
+			<%= f.collection_radio_buttons :battery, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Pull Station 
+			<%= f.collection_radio_buttons :pull, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Smoke 
+			<%= f.collection_radio_buttons :smoke, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Carbon 
+			<%= f.collection_radio_buttons :carbon, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Heat 
+			<%= f.collection_radio_buttons :heat, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Waterflow 
+			<%= f.collection_radio_buttons :waterflow, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Tamper 
+			<%= f.collection_radio_buttons :tamper, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Pump Run 
+			<%= f.collection_radio_buttons :pump, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Pump Fail 
+			<%= f.collection_radio_buttons :pump_fail, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+		<div> Pump Phase Reversal 
+			<%= f.collection_radio_buttons :pump_rev, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
+
+		<%= f.input :general_des, label: "Explain:", label: false, class: 'form-control' %>
+
+		<div> Check Audibles and Visibles for the following. Are they okay? </div>
+
+		<div> 
+			Correct operation 
+			<%= f.collection_radio_buttons :nac_op, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :nac_op_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Sync 
+			<%= f.collection_radio_buttons :nac_sync, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :nac_sync_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Random Supervision 
+			<%= f.collection_radio_buttons :nac_sup, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :nac_sup_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
 
 		<%= f.submit "Send Checklist", class: "btn btn-primary" %>
 	<% end %>
