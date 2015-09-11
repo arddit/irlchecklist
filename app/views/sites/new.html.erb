@@ -105,6 +105,96 @@
 			<%= f.input :nac_sup_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
+		<div> 
+			Check recall for correct operation 
+			<%= f.collection_radio_buttons :recall, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :recall_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Check Phase I for correct operation 
+			<%= f.collection_radio_buttons :phase1, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :phase1_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Check Phase II for correct operation 
+			<%= f.collection_radio_buttons :phase2, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :phase2_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Check all fan shutdowns throughout. Do they latch? 
+			<%= f.collection_radio_buttons :fan, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :fan_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Check times on all waterflows. Are they 30-45 seconds? 
+			<%= f.collection_radio_buttons :wf, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :wf_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is there power supervision on all carbons? 
+			<%= f.collection_radio_buttons :co, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :co_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is all field wiring strapped legally to building structure? 
+			<%= f.collection_radio_buttons :wire, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :wire_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is all field wiring in mechanical rooms in pipe? 
+			<%= f.collection_radio_buttons :pipe, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :pipe_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is all flex less than 36"?
+			<%= f.collection_radio_buttons :flex, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :flex_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Are all boxes checked for missing covers and knock out covers? 
+			<%= f.collection_radio_buttons :covers, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :covers_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Have all covers been painted red? 
+			<%= f.collection_radio_buttons :red, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :red_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Do all spliced wires have black wire nuts? 
+			<%= f.collection_radio_buttons :splice, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :splice_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is the as built riser diagram accurate?
+			<%= f.collection_radio_buttons :asbuilt, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :asbuilt_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Is the A433 accurate? 
+			<%= f.collection_radio_buttons :a433, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :a433_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
+		<div> 
+			Does the A433 match the as built? 
+			<%= f.collection_radio_buttons :match, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :match_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+
 
 		<%= f.submit "Send Checklist", class: "btn btn-primary" %>
 	<% end %>

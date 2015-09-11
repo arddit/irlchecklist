@@ -129,6 +129,10 @@ form input[type='text']{
   width: 100%;
 }
 
+.btn{
+  width: 100%;
+}
+
 input, textarea{
   border: 2px solid #bbb;
   margin-bottom: 15px;
@@ -153,7 +157,3 @@ input {
   }
 }
 
-#session_remember_me {
-  width: auto;
-  margin-left: 0;
-}
