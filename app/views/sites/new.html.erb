@@ -1,0 +1,27 @@
+	<%= simple_form_for @site do |f| %> 
+
+		<%= f.input :name, label: "Site:", placeholder: 'address', class: 'form-control' %>
+
+		<%= f.input :date, label: "Date:", placeholder: 'date', class: 'form-control' %>
+
+		<%= f.input :tech_name, label: "Tech:", class: 'form-control' %>
+
+		<div> DO YOU HAVE DRAWINGS DURING THIS PRE-TEST?: </div>
+		<%= f.collection_radio_buttons :drawings, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+		<%= f.input :drawings_des, label: "Explain:", class: 'form-control' %>
+		
+		<div> Are all signs and frames installed?: </div>
+		<%= f.collection_radio_buttons :signs, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+		<%= f.input :signs_des, label: "Explain:", class: 'form-control' %>
+
+		<div> Is Central Station Info on Panel?: </div>
+		<%= f.collection_radio_buttons :central, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+		<%= f.input :central_des, label: "Explain:", class: 'form-control' %>
+
+		<div> Is Riser Diagram posted next to panel?: </div>
+		<%= f.collection_radio_buttons :riser, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+		<%= f.input :riser_des, label: "Explain:", class: 'form-control' %>
+		
+
+		<%= f.submit "Send Checklist", class: "btn btn-primary" %>
+	<% end %>
