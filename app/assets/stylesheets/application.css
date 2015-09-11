@@ -126,6 +126,9 @@ footer ul li {
 /* forms */
 
 form input[type='text']{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -134,7 +137,7 @@ form input[type='text']{
 }
 
 input, textarea{
-  border: 2px solid #bbb;
+  border: 2px solid #32cd32;
   margin-bottom: 15px;
 }
 input {
