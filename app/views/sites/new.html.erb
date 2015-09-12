@@ -1,13 +1,14 @@
+
 	<%= simple_form_for @site do |f| %> 
 
-		<%= f.input :name, label: "Site:", placeholder: 'address', class: 'form-control' %>
+		<%= f.input :name, label: "Site:", placeholder: 'address', class: 'fa fa-shield fa-rotate-270' %>
 
-		<%= f.input :date, label: "Date:", placeholder: 'date', class: 'form-control' %>
+		<%= f.input :date, label: "Date:", placeholder: 'date', class: 'fa fa-shield fa-rotate-270' %>
 
-		<%= f.input :tech_name, label: "Tech:", class: 'form-control' %>
+		<%= f.input :tech_name, label: "Tech:", class: 'fa fa-shield fa-rotate-270' %>
 
 		<div> 
-			DO YOU HAVE DRAWINGS DURING THIS PRE-TEST? 
+			Do you have drawings during this pre-test? 
 			<%= f.collection_radio_buttons :drawings, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :drawings_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
@@ -196,5 +197,5 @@
 		</div>
 
 
-		<%= f.submit "Send Checklist", class: "btn btn-primary" %>
+		<%= f.submit "Send Checklist", class: "fa btn btn-primary" %>
 	<% end %>
