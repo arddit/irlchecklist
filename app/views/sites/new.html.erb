@@ -29,191 +29,203 @@
 		</div>
 
 		<div> 
-			<t>Is Riser Diagram posted next to panel? </t>
+			<t class="hideme">Is Riser Diagram posted next to panel? </t>
 			<p>
 			<%= f.collection_radio_buttons :riser, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :riser_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
-		<div> <t>Is power wiring okay at: </t> </div>
+		<div> <t class="hideme">Is power wiring okay at: </t> </div>
 		<hr>
 		<div> 
-			<t>Fused Disconnect Switch? </t>
+			<t class="hideme">Fused Disconnect Switch? </t>
 			<%= f.collection_radio_buttons :fds, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :fds_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<div> 
-			<t>Fire Alarm Switch? </t>
+			<t class="hideme">Fire Alarm Switch? </t>
 			<%= f.collection_radio_buttons :facp, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :facp_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<div> 
-			<t>Ground? </t>
+			<t class="hideme">Ground? </t>
 			<%= f.collection_radio_buttons :ground, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :ground_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is the panel wiring neatly dressed? </t>
+			<t class="hideme">Is the panel wiring neatly dressed? </t>
 			<p>
 			<%= f.collection_radio_buttons :neat, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :neat_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
-		<div> <t>Check phone lines, battery, each alarm type to central station and fire pump signals. Are they okay? </t> </div>
+		<div> <t class="hideme">Check phone lines, battery, each alarm type to central station and fire pump signals. Are they okay? </t> </div>
 		<hr>
-		<div> <t>Phone line 1 </t>
+		<div> <t class="hideme">Phone line 1 </t>
 			<%= f.collection_radio_buttons :line1, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Phone line 2 </t>
+		<div> <t class="hideme">Phone line 2 </t>
 			<%= f.collection_radio_buttons :line2, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Battery </t>
+		<div> <t class="hideme">Battery </t>
 			<%= f.collection_radio_buttons :battery, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Pull Station </t>
+		<div> <t class="hideme">Pull Station </t>
 			<%= f.collection_radio_buttons :pull, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Smoke </t>
+		<div> <t class="hideme">Smoke </t>
 			<%= f.collection_radio_buttons :smoke, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Carbon </t>
+		<div> <t class="hideme">Carbon </t>
 			<%= f.collection_radio_buttons :carbon, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Heat </t>
+		<div> <t class="hideme">Heat </t>
 			<%= f.collection_radio_buttons :heat, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Waterflow </t>
+		<div> <t class="hideme">Waterflow </t>
 			<%= f.collection_radio_buttons :waterflow, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Tamper </t>
+		<div> <t class="hideme">Tamper </t>
 			<%= f.collection_radio_buttons :tamper, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Pump Run </t>
+		<div> <t class="hideme">Pump Run </t>
 			<%= f.collection_radio_buttons :pump, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Pump Fail </t>
+		<div> <t class="hideme">Pump Fail </t>
 			<%= f.collection_radio_buttons :pump_fail, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
-		<div> <t>Pump Phase Reversal </t>
+		<div> <t class="hideme">Pump Phase Reversal </t>
 			<%= f.collection_radio_buttons :pump_rev, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %> </div>
 
 		<%= f.input :general_des, label: "Explain:", class: 'form-control' %>
 		<hr>
-		<div> <t>Check Audibles and Visibles for the following. Are they okay? </t></div>
+		<div> <t class="hideme">Check Audibles and Visibles for the following. Are they okay? </t></div>
 		<hr>
 		<div> 
-			<t>Correct operation </t>
+			<t class="hideme">Correct operation </t>
 			<%= f.collection_radio_buttons :nac_op, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :nac_op_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<div> 
-			<t>Sync </t>
+			<t class="hideme">Sync </t>
 			<%= f.collection_radio_buttons :nac_sync, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :nac_sync_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<div> 
-			<t>Random Supervision </t>
+			<t class="hideme">Random Supervision </t>
 			<%= f.collection_radio_buttons :nac_sup, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :nac_sup_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Check recall for correct operation </t>
+			<t class="hideme">Check recall for correct operation </t>
 			<p>
 			<%= f.collection_radio_buttons :recall, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :recall_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<div> 
-			<t>Check Phase I for correct operation </t>
+			<t class="hideme">Check Phase I for correct operation </t>
 			<p>
 			<%= f.collection_radio_buttons :phase1, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :phase1_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<div> 
-			<t>Check Phase II for correct operation </t>
+			<t class="hideme">Check Phase II for correct operation </t>
 			<p>
 			<%= f.collection_radio_buttons :phase2, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :phase2_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Check all fan shutdowns throughout. Do they latch? </t>
+			<t class="hideme">Check all fan shutdowns throughout. Do they latch? </t>
 			<p>
 			<%= f.collection_radio_buttons :fan, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :fan_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Check times on all waterflows. Are they 30-45 seconds? </t>
+			<t class="hideme">Check times on all waterflows. Are they 30-45 seconds? </t>
 			<p>
 			<%= f.collection_radio_buttons :wf, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :wf_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is there power supervision on all carbons? </t>
+			<t class="hideme">Is there power supervision on all carbons? </t>
 			<p>
 			<%= f.collection_radio_buttons :co, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :co_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is all field wiring strapped legally to building structure? </t>
+			<t class="hideme">Is all field wiring strapped legally to building structure? </t>
 			<p>
 			<%= f.collection_radio_buttons :wire, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :wire_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is all field wiring in mechanical rooms in pipe? </t>
+			<t class="hideme">Is all field wiring in mechanical rooms in pipe? </t>
 			<p>
 			<%= f.collection_radio_buttons :pipe, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :pipe_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is all flex less than 36"? </t>
+			<t class="hideme">Is all flex less than 36"? </t>
 			<p>
 			<%= f.collection_radio_buttons :flex, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :flex_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Are all boxes checked for missing covers and knock out covers? </t>
+			<t class="hideme">Are all boxes checked for missing covers and knock out covers? </t>
 			<p>
 			<%= f.collection_radio_buttons :covers, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :covers_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Have all covers been painted red? </t>
+			<t class="hideme">Have all covers been painted red? </t>
 			<p>
 			<%= f.collection_radio_buttons :red, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :red_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Do all spliced wires have black wire nuts? </t>
+			<t class="hideme">Do all spliced wires have black wire nuts? </t>
 			<p>
 			<%= f.collection_radio_buttons :splice, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :splice_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is the as built riser diagram accurate? </t>
+			<t class="hideme">Is the as built riser diagram accurate? </t>
 			<p>
 			<%= f.collection_radio_buttons :asbuilt, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :asbuilt_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Is the A433 accurate? </t>
+			<t class="hideme">Is the A433 accurate? </t>
 			<p>
 			<%= f.collection_radio_buttons :a433, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :a433_des, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 		<hr>
 		<div> 
-			<t>Does the A433 match the as built? </t>
+			<t class="hideme">Does the A433 match the as built? </t>
 			<p>
 			<%= f.collection_radio_buttons :match, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
 			<%= f.input :match_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+		<hr>
+		<div> 
+			<t class="hideme">Is there a fire pump? </t>
+			<p>
+			<%= f.collection_radio_buttons :fa_pump, [[true, 'Yes'] ,[false, 'No']], :first, :last, class: 'form-control' %>
+			<%= f.input :fa_pump_des, label: "Explain:", label: false, class: 'form-control' %>
+		</div>
+		<hr>
+		<div> 
+			<t class="hideme">Other comments? </t>
+			<%= f.input :comments, label: "Explain:", label: false, class: 'form-control' %>
 		</div>
 
 		<hr>
