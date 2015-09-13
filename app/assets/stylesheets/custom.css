@@ -1,8 +1,4 @@
 
-html {
-  font-family: 'Dosis', sans-serif;
-}
-
 section {
   overflow: auto;
 }
@@ -101,6 +97,17 @@ form input[type='text']{
   -moz-border-radius: 5px;
   border-radius: 5px;
   width: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+t{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+}
+
+form label{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
 }
 
 form input[type='radio']{
