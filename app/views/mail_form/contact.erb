@@ -1,0 +1,227 @@
+<h4 style="text-decoration:underline">Site: <%= @resource.name %></h4>
+<h4 style="text-decoration:underline">Date: <%= @resource.date %></h4>
+<h4 style="text-decoration:underline">Tech: <%= @resource.tech_name %></h4>
+
+<div> 
+			<t>Do you have drawings during this pre-test? </t>
+			<p>
+			<%= @resource.drawings ? 'Yes' : 'No' %> --
+			<%= @resource.drawings_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Are all signs and frames installed? </t>
+			<p>
+			<%= @resource.signs ? 'Yes' : 'No' %> --
+			<%= @resource.signs_des %>
+		</div>
+
+		<div> 
+			<t>Is Central Station Info on Panel? </t>
+			<p>
+			<%= @resource.central ? 'Yes' : 'No' %> --
+			<%= @resource.central_des %>
+		</div>
+
+		<div> 
+			<t>Is Riser Diagram posted next to panel? </t>
+			<p>
+			<%= @resource.riser ? 'Yes' : 'No' %> --
+			<%= @resource.riser_des %>
+		</div>
+		<hr>
+		<div> <t>Is power wiring okay at: </t> </div>
+		<hr>
+		<div> 
+			<t>Fused Disconnect Switch? </t>
+			<%= @resource.fds ? 'Yes' : 'No' %> --
+			<%= @resource.fds_des%>
+		</div>
+
+		<div> 
+			<t>Fire Alarm Switch? </t>
+			<%= @resource.facp ? 'Yes' : 'No' %> --
+			<%= @resource.facp_des%>
+		</div>
+
+		<div> 
+			<t>Ground? </t>
+			<%= @resource.ground ? 'Yes' : 'No' %> --
+			<%= @resource.ground_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is the panel wiring neatly dressed? </t>
+			<p>
+			<%= @resource.neat ? 'Yes' : 'No' %> --
+			<%= @resource.neat_des %>
+		</div>
+		<hr>
+		<div> <t>Check phone lines, battery, each alarm type to central station and fire pump signals. Are they okay? </t> </div>
+		<hr>
+		<div> <t>Phone line 1 </t>
+			<%= @resource.line1 ? 'Yes' : 'No' %> </div>
+		<div> <t>Phone line 2 </t>
+			<%= @resource.line2 ? 'Yes' : 'No' %> </div>
+		<div> <t>Battery </t>
+			<%= @resource.battery ? 'Yes' : 'No' %> </div>
+		<div> <t>Pull Station </t>
+			<%= @resource.pull ? 'Yes' : 'No' %> </div>
+		<div> <t>Smoke </t>
+			<%= @resource.smoke ? 'Yes' : 'No' %> </div>
+		<div> <t>Carbon </t>
+			<%= @resource.carbon ? 'Yes' : 'No' %> </div>
+		<div> <t>Heat </t>
+			<%= @resource.heat ? 'Yes' : 'No' %> </div>
+		<div> <t>Waterflow </t>
+			<%= @resource.waterflow ? 'Yes' : 'No' %> </div>
+		<div> <t>Tamper </t>
+			<%= @resource.tamper ? 'Yes' : 'No' %> </div>
+		<div> <t>Pump Run </t>
+			<%= @resource.pump ? 'Yes' : 'No' %> </div>
+		<div> <t>Pump Fail </t>
+			<%= @resource.pump_fail ? 'Yes' : 'No' %> </div>
+		<div> <t>Pump Phase Reversal </t>
+			<%= @resource.pump_rev ? 'Yes' : 'No' %> </div>
+
+		<t>Other comments: </t>
+		<%= @resource.general_des %>
+		<hr>
+		<div> <t>Check Audibles and Visibles for the following. Are they okay? </t></div>
+		<hr>
+		<div> 
+			<t>Correct operation </t>
+			<%= @resource.nac_op ? 'Yes' : 'No' %> --
+			<%= @resource.nac_op_des %>
+		</div>
+
+		<div> 
+			<t>Sync </t>
+			<%= @resource.nac_sync ? 'Yes' : 'No' %> --
+			<%= @resource.nac_sync_des %>
+		</div>
+
+		<div> 
+			<t>Random Supervision </t>
+			<%= @resource.nac_sup ? 'Yes' : 'No' %> --
+			<%= @resource.nac_sup_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Check recall for correct operation </t>
+			<p>
+			<%= @resource.recall ? 'Yes' : 'No' %> --
+			<%= @resource.recall_des %>
+		</div>
+
+		<div> 
+			<t>Check Phase I for correct operation </t>
+			<p>
+			<%= @resource.phase1 ? 'Yes' : 'No' %> --
+			<%= @resource.phase1_des %>
+		</div>
+
+		<div> 
+			<t>Check Phase II for correct operation </t>
+			<p>
+			<%= @resource.phase2 ? 'Yes' : 'No' %> --
+			<%= @resource.phase2_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Check all fan shutdowns throughout. Do they latch? </t>
+			<p>
+			<%= @resource.fan ? 'Yes' : 'No' %> --
+			<%= @resource.fan_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Check times on all waterflows. Are they 30-45 seconds? </t>
+			<p>
+			<%= @resource.wf ? 'Yes' : 'No' %> --
+			<%= @resource.wf_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is there power supervision on all carbons? </t>
+			<p>
+			<%= @resource.co ? 'Yes' : 'No' %> --
+			<%= @resource.co_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is all field wiring strapped legally to building structure? </t>
+			<p>
+			<%= @resource.wire ? 'Yes' : 'No' %> --
+			<%= @resource.wire_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is all field wiring in mechanical rooms in pipe? </t>
+			<p>
+			<%= @resource.pipe ? 'Yes' : 'No' %> --
+			<%= @resource.pipe_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is all flex less than 36"? </t>
+			<p>
+			<%= @resource.flex ? 'Yes' : 'No' %> --
+			<%= @resource.flex_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Are all boxes checked for missing covers and knock out covers? </t>
+			<p>
+			<%= @resource.covers ? 'Yes' : 'No' %> --
+			<%= @resource.covers_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Have all covers been painted red? </t>
+			<p>
+			<%= @resource.red ? 'Yes' : 'No' %> --
+			<%= @resource.red_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Do all spliced wires have black wire nuts? </t>
+			<p>
+			<%= @resource.splice ? 'Yes' : 'No' %> --
+			<%= @resource.splice_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is the as built riser diagram accurate? </t>
+			<p>
+			<%= @resource.asbuilt ? 'Yes' : 'No' %> --
+			<%= @resource.asbuilt_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is the A433 accurate? </t>
+			<p>
+			<%= @resource.a433 ? 'Yes' : 'No' %> --
+			<%= @resource.a433_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Does the A433 match the as built? </t>
+			<p>
+			<%= @resource.match ? 'Yes' : 'No' %> --
+			<%= @resource.match_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Is there a fire pump? </t>
+			<p>
+			<%= @resource.fa_pump ? 'Yes' : 'No' %> --
+			<%= @resource.fa_pump_des %>
+		</div>
+		<hr>
+		<div> 
+			<t>Other comments: </t>
+			<%= @resource.comments %>
+		</div>
+
+		<hr>
