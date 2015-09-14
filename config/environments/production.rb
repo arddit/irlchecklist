@@ -80,7 +80,6 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   # SMTP settings for gmail
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   ActionMailer::Base.smtp_settings = {
                     :address        => "smtp.gmail.com",
                     :port           => 587,
@@ -88,5 +87,6 @@ Rails.application.configure do
                     :user_name      => "ardihamza@gmail.com",
                     :password       => "janaerdhivitiiRi",
                     :openssl_verify_mode  => 'none'
+                    :enable_starttls_auto => true
   } 
 end
