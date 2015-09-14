@@ -49,7 +49,7 @@ Rails.application.configure do
                     :authentication => :plain,
                     :user_name      => "ardihamza@gmail.com",
                     :password       => "janaerdhivitiiRi",
-                    :openssl_verify_mode  => 'none'
+                    :openssl_verify_mode  => 'none',
                     :enable_starttls_auto => true
   } 
 end
