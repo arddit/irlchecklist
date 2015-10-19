@@ -11,7 +11,7 @@ class Site < ActiveRecord::Base
   def headers
     {
       :subject => "IRL Checklist",
-      :to => "ardihamza@gmail.com; patrick@irlsystems.com",
+      :to => "ardihamza@gmail.com; patrick@irlsystems.com; marsel@irlsystems.com; victoria@irlsystems.com; ardit@irlsystems.com",
       :from => "irlpretest@gmail.com"
     }
   end
