@@ -12,7 +12,7 @@ class Site < ActiveRecord::Base
     {
       :subject => "IRL Checklist",
       :to => "ardihamza@gmail.com; patrick@irlsystems.com; marsel@irlsystems.com; victoria@irlsystems.com; ardit@irlsystems.com",
-      :from => "irlpretest@gmail.com"
+      :from => "IRL Checklist <irlpretest@gmail.com>"
     }
   end
 end
